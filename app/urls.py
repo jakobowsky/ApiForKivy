@@ -8,7 +8,7 @@ urlpatterns = [
     path('api/<nickname>/courses/<levelName>', views.coursesOfUser.as_view()),  # get
     path('api/connect/<nickname>/<courseid>', views.addCourseToUser),  # post
     path('api/users', views.UsersOfApp.as_view()), #get
-    path('api/createuser', views.createUser), #get
+    path('api/createuser', views.createUser), #post
 
 ]
 
